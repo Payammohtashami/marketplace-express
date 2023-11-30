@@ -41,7 +41,7 @@ module.exports = class Application {
 
         // ejs configs 
         this.#app.set('view engine', 'ejs');
-        this.#app.set('views', path.resolve('../resourse/view'));
+        this.#app.set('views', path.resolve('./resourse/view'));
 
         // sessions
         this.#app.use(session({
